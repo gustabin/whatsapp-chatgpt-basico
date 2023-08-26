@@ -1,0 +1,21 @@
+{
+  "id": "chatcmpl-7rwBmafVxNFJnUdzZhHis2WAr6D5P",
+  "object": "chat.completion",
+  "created": 1693089418,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Gracias por proporcionar la información. Basado en los síntomas que mencionas, te agendaré una cita con un especialista en Odontología. A continuación, te mostraré el reporte con los detalles:\n\n||Nombre: Aurelio Jara||Edad: 54 años||Especialidad: Odontología||Síntomas: Dolor de muela||\n\nUn asesor se pondrá en contacto contigo para confirmar la cita y brindarte más información. ¡Espero que te mejores pronto!"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 580,
+    "completion_tokens": 115,
+    "total_tokens": 695
+  }
+}

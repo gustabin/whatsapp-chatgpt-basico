@@ -1,0 +1,73 @@
+# some hosters require a htaccess to change the PHP version
+.htaccess
+.env-*
+.idea/
+.DS_Store
+rector.php
+phpstan.sh
+
+# custom apache rules e.g. to deactivate ioncube loader
+public/.user.ini
+
+# for symfony local webserver
+php.ini
+.php-version
+
+# YARN 2
+.yarnrc.yml
+.yarn
+
+# for keeping empty directories
+!.gitkeep
+
+/bin/*
+!/bin/console
+*local.yaml
+/config/bundles-local.php
+
+/templates/invoice/renderer/.~lock*
+/translations/branding.*.xlf
+
+/var/data/*
+/var/coverage/
+/var/cache/*
+
+/var/invoices/*
+/var/export/*
+/var/log/*
+/var/sessions/*
+/var/packages/*
+/var/plugins/*
+*.disabled
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+.env
+/public/bundles/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+/.phpunit.result.cache
+###< phpunit/phpunit ###
+
+###> friendsofphp/php-cs-fixer ###
+.php_cs
+.php_cs.cache
+.php-cs-fixer.cache
+###< friendsofphp/php-cs-fixer ###
+
+###> symfony/phpunit-bridge ###
+.phpunit
+###< symfony/phpunit-bridge ###
+
+###> symfony/webpack-encore-bundle ###
+/node_modules/
+npm-debug.log
+yarn-error.log
+###< symfony/webpack-encore-bundle ###
+/nbproject/*

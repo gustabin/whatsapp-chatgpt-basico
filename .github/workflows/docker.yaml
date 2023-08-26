@@ -1,0 +1,16 @@
+name: 'Docker Build'
+on:
+  release:
+    types: [released]
+
+jobs:
+  build:
+    name: Trigger docker image build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Emit repository_dispatch
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.DOCKER_ACCESS_TOKEN }}
+          repository: tobybatch/kimai2
+          event-type: kimai_release

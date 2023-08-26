@@ -1,0 +1,15 @@
+@include color-mode(dark, true) {
+    table.dataTable {
+        th.today {
+            color: var(--tblr-muted);
+        }
+    }
+
+    .overlay {
+        background: rgba(0, 0, 0, 0.5);
+
+        > .fas {
+            color: var(--tblr-white);
+        }
+    }
+}

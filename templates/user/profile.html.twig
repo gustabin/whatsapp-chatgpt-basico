@@ -1,0 +1,20 @@
+{% extends 'user/form.html.twig' %}
+
+{% block form_pre_content %}
+        <div class="row">
+            <div class="col-md-9">
+                {{ form_row(form.alias) }}
+            </div>
+            <div class="col-md-3">
+                {{ form_row(form.color) }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                {{ form_row(form.title) }}
+            </div>
+            <div class="col-md-3">
+                {{ form_row(form.accountNumber) }}
+            </div>
+        </div>
+{% endblock %}

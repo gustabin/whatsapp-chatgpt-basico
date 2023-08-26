@@ -1,0 +1,28 @@
+{
+  "name": "kimai/test-plugin-composer",
+  "description": "Just a test fixture for the PluginManager",
+  "homepage": "https://github.com/kimai/kimai",
+  "type": "kimai-plugin",
+  "version": "1.0",
+  "require": {
+    "kimai/kimai": "*"
+  },
+  "keywords": [
+    "kimai",
+    "kimai-plugin"
+  ],
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Kevin Papst",
+      "homepage": "https://www.kevinpapst.de"
+    }
+  ],
+  "extra": {
+    "kimai": {
+      "require": 10000,
+      "name": "TestPlugin from composer.json",
+      "license": []
+    }
+  }
+}
